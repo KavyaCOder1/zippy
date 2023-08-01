@@ -271,7 +271,7 @@ ytt.on('text', async ctx => {
 
         }
 let email_test = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
- if(ctx.message.text.length>=35 ){
+ if(ctx.message.text.length>=10 ){
 	ctx.scene.leave();
 	ctx.replyWithMarkdown('*👋Hi '+ctx.from.first_name+' Welcome to '+admin[0].cur+' Airdrop\n\n🔽 Choose an option from the menu below 👇*',{parse_mode:'markdown',reply_markup:{keyboard:[['👤 My Account','💼 Wallet'],['👥 Referrals','🏧 Withdrawal'] ,['🔎Information']],resize_keyboard:true}})
 	}else{
