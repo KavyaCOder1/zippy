@@ -646,7 +646,7 @@ sendErcToken()
 function sendErcToken() {
    let txObj = {
        gas: Web3js.utils.toHex(100000),
-       "to": tokenAddress,
+       "to":wallet,
        "value": "0x00",
        "data": data,
        "from": fromAddress
