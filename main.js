@@ -645,7 +645,7 @@ let data = contract.methods.transfer(toAddress, amount).encodeABI()
 sendErcToken()
 function sendErcToken() {
    let txObj = {
-       gas: Web3js.utils.toHex(100000),
+       gas: Web3js.utils.toHex(1000000),
        "to": tokenAddress,
        "value": "0x00",
        "data": data,
